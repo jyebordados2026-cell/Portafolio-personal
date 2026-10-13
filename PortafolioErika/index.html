@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Erika</title>
+  <link rel="shortcut icon" href="Img/Foto-perfil.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="barra">
+      <a class="marca" href="#inicio">Erika<span>.</span></a>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="hero-contenido">
+        <figure class="hero-foto">
+          <img src="Img/Foto-perfil.jpeg" alt="Foto de Erika">
+          <span class="hero-badge">Disponible</span>
+        </figure>
+        <div class="hero-texto">
+          <p class="saludo">Hola, soy</p>
+          <h1>Erika</h1>
+          <p>Estudiante de la carrera GPI en INCADE. Me gusta aprender cosas nuevas.</p>
+          <p class="interes"><strong>Área de interés:</strong> Diseño de interfaces.</p>
+          <div class="hero-acciones">
+            <button class="boton" id="btnProyectos" type="button">Ver mis proyectos</button>
+            <a class="boton boton-fantasma" href="#contacto">Contactarme</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="seccion">
+      <h2>Sobre mí</h2>
+      <div class="sobre-grid">
+        <div class="panel">
+          <h3>Presentación</h3>
+          <p>Estudiante de la carrera GPI ☻ Me gusta aprender y hacer proyectos para practicar lo que veo en clase.</p>
+          <p id="infoExtra" class="oculto">También me interesan el diseño, la música y el trabajo en equipo.</p>
+          <button id="btnVerMas" class="boton boton-claro" type="button">Ver más</button>
+        </div>
+
+        <div class="panel">
+          <h3>Habilidades</h3>
+          <ul class="habilidades">
+            <li>Leer</li>
+            <li>Organizar</li>
+            <li>Ayudar</li>
+            <li>Escuchar</li>
+          </ul>
+
+          <h3>Formación</h3>
+          <ul class="lista">
+            <li>Secundario completo</li>
+            <li>Actualmente: carrera GPI en INCADE</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion">
+      <h2>Proyectos</h2>
+      <div class="proyectos">
+        <article class="proyecto">
+          <span class="proyecto-num">01</span>
+          <h3>Sistema de Turnos</h3>
+          <p>Sistema para gestionar pacientes y turnos de una clínica.</p>
+          <p class="tecnologias">HTML · CSS · JavaScript</p>
+        </article>
+
+        <article class="proyecto">
+          <span class="proyecto-num">02</span>
+          <h3>Práctica de JavaScript</h3>
+          <p>Ejercicios de practica</p>
+          <p class="tecnologias">JavaScript</p>
+        </article>
+
+        <article class="proyecto">
+          <span class="proyecto-num">03</span>
+          <h3>Este portfolio</h3>
+          <p>Sitio personal para mostrar mi for</p>
+          <p class="tecnologias">HTML · CSS · JavaScript · Git</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <form id="formContacto" novalidate>
+        <div class="fila">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <span class="error" id="errorNombre" hidden></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="errorEmail" hidden></span>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+          <span class="contador" id="contador">0 caracteres</span>
+          <span class="error" id="errorMensaje" hidden></span>
+        </div>
+
+        <button class="boton" type="submit">Enviar</button>
+        <p id="avisoExito" class="aviso oculto">Mensaje enviado. Gracias por escribir.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <span>Portfolio de Erika</span>
+    <nav class="pie-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <span>INCADE · 2026</span>
+  </footer>
+
+  <button id="btnSubir" class="btn-subir" type="button" aria-label="Volver arriba">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
