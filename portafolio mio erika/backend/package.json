@@ -1,0 +1,19 @@
+{
+  "name": "portafolio-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend Node.js + Express con base de datos SQLite para el CRUD de proyectos del portfolio",
+  "main": "src/server.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "dev": "npm run build && node --env-file-if-exists=.env --watch src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
